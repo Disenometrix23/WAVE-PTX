@@ -40664,14 +40664,14 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-table-alt-custom-color-8 tr:nth-child(even)
         {
             color: #111111;
-            background-color: #fbfbfb;
+            background-color: #f9f9f9;
         }
 
         .u-button-style.u-custom-color-8,
         .u-button-style.u-custom-color-8[class*="u-border-"]
         {
             color: #111111 !important;
-            background-color: #fbfbfb !important;
+            background-color: #f9f9f9!important;
         }
 
         .u-button-style.u-custom-color-8:hover,

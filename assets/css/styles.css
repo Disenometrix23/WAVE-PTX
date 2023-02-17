@@ -154,6 +154,7 @@
 @media (max-width: 767px) {
   .u-section-1 .u-sheet-1 {
     min-height: 100px;
+	text-align: center;
   }
 
   .u-section-1 .u-layout-wrap-1 {
@@ -199,6 +200,7 @@
 @media (max-width: 575px) {
   .u-section-1 .u-sheet-1 {
     min-height: 482px;
+	text-align: center;
   }
 
   .u-section-1 .u-layout-cell-1 {
