@@ -1,3 +1,77 @@
+.lightbox {
+	background-color: fade(black, 80%);  
+	overflow: hidden;
+	position: fixed;
+	display: none;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0
+}
+.lightbox-container {
+	position: relative;
+	max-width: 960px;
+	margin: 7% auto;
+	display: block;    
+	padding: 0 3%;
+	height: auto;
+	z-index: 99
+}
+.lightbox-content {box-shadow: 0 1px 6px fade(black, 70%)}
+.lightbox-close {
+    text-transform: uppercase;    
+    background: #000;
+    position: absolute; 
+    font-weight: 500;      
+    font-size: 12px;
+    display: block;
+    border: none;
+    color: white;
+    top: -28px;
+    right: 5%;
+	z-index:100
+  }
+ 
+.lightbox-close:hover{font-weight:700 !important}
+
+.video-container {  
+    padding-bottom: 56.25%;
+    position: relative;  
+    padding-top: 30px; 
+    overflow: hidden;
+    height: 0; 
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {position: absolute;min-height: 500px;width: 100%;left: 0;top: 0;}
+
+@media screen and (max-width: 414px) { .lightbox-container{margin-top: 20%}}
+@media screen and (max-width: 768px) { .lightbox-container{margin-top: 15%}}
+
+#container {
+	border-radius: 4px;
+	max-width: 300px;
+	height: auto;
+	padding: 50px;
+	background: white;
+	margin: 100px auto;
+}
+
+#playme {
+    background: #007fed;
+    text-transform: uppercase;
+    border: none;
+    color: white !important;
+    margin: 29px auto 0 36px;
+    font-size: 14px;
+}
+#playme:focus {outline: none}
+
+/* FIN MODAL VIDEO*/
+
+
  .u-section-1 {
   background-image: url("../images/background-banner-mobilink-1.png");
   background-position: 50% 50%;
@@ -87,7 +161,7 @@
     margin-right: 0;
   }
 
-  .u-section-1 .u-btn-1 {
+  .u-section-1 .u-btn-1 #playme {
     font-size: 0.75rem;
     margin-left: 0;
   }
@@ -129,7 +203,7 @@
     width: auto;
   }
 
-  .u-section-1 .u-btn-1 {
+  .u-section-1 .u-btn-1 #playme {
     margin-top: 17px;
   }
 

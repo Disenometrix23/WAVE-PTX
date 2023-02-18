@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" media="screen">
     <script class="u-script" type="text/javascript" src="assets/js/jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="assets/js/nicepage.js" defer=""></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 	
     <meta name="referrer" content="origin">
     <meta property="og:title" content="MOBILINK WAVE PTX ™">
@@ -31,18 +32,15 @@
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "MOBILINK WAVE PTX ™"
-}</script>
+    <script type="application/ld+json">{"@context": "http://schema.org","@type": "Organization","name": "MOBILINK WAVE PTX ™"}</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
   
   </head>
   
-  <body class="u-body u-overlap u-xl-mode" data-lang="es"><header class="u-clearfix u-header u-header" id="sec-2c44"><div class="u-clearfix u-sheet u-valign-bottom u-sheet-1">
+  <body class="u-body u-overlap u-xl-mode" data-lang="es">
+  <header class="u-clearfix u-header u-header" id="sec-2c44"><div class="u-clearfix u-sheet u-valign-bottom u-sheet-1">
     <!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNGR6N9"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -57,16 +55,31 @@
             <div class="u-layout-row" style="">
               <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-layout-cell-1" src="">
                 <div class="u-container-layout u-valign-bottom u-container-layout-1">
-                  <h1 class="u-align-center-sm u-align-center-xs u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-1">
-                    <span style="font-weight: 400;">
-                      <span style="font-weight: 400;">Expande tus comunicaciones con</span>
-                    </span>
-                    <span style="font-weight: 700;">WAVE PTX™</span>
-                    </span>
-                  </h1>
-                  <p class="u-align-center-sm u-align-center-xs u-custom-font u-font-montserrat u-text u-text-custom-color-1 u-text-2"> Más velocidad y simplicidad en todas sus comunicaciones</p>
-                  <a href="https://youtu.be/pFxdez-o2dk" class="u-align-center-sm u-align-center-xs u-border-none u-btn u-button-style u-none u-text-active-custom-color-2 u-text-body-alt-color u-text-hover-custom-color-2 u-btn-1" target="_blank"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="assets/images/9441533-a4a85dc9.png" alt=""></span> &nbsp;Véalo por usted mismo... 
-                  </a>
+					<h1 class="u-align-center-sm u-align-center-xs u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-1">
+						<span style="font-weight: 400;">
+							<span style="font-weight: 400;">Expande tus comunicaciones con</span>
+						</span>
+							<span style="font-weight: 700;">WAVE PTX™</span>
+						</span>
+					</h1>
+					<p class="u-align-center-sm u-align-center-xs u-custom-font u-font-montserrat u-text u-text-custom-color-1 u-text-2"> Más velocidad y simplicidad en todas sus comunicaciones</p>
+					<!-- Modal -->
+					<button id="playme" 
+						class="u-align-center-sm u-align-center-xs u-border-none u-btn u-button-style u-none u-text-active-custom-color-2 u-text-body-alt-color u-text-hover-custom-color-2 u-btn-1"
+						onclick="revealVideo('video','youtube')"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="assets/images/9441533-a4a85dc9.png" alt=""></span> &nbsp;Véalo por usted mismo...
+					</button>
+					<div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+						<div class="lightbox-container">  
+							<div class="lightbox-content">
+								<button onclick="hideVideo('video','youtube')" class="lightbox-close">Cerrar | ✕</button>
+								<div class="video-container">
+									<iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/pFxdez-o2dk?autoplay=1&mute=1&enablejsapi=1" 
+										frameborder="0" allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+									</iframe>
+								</div>      
+							</div>
+						</div>
+					</div>
                 </div>
               </div>
               <div class="u-align-center u-container-style u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-layout-cell-2" src="">
@@ -345,6 +358,8 @@ Santiago de Chile
     <footer class="u-align-center u-clearfix u-custom-color-1 u-footer u-footer" id="sec-1606"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-align-center u-heading-font u-text u-text-1">©2023 Mobilink. Todos los derechos reservados.<br>©2023 Motorola Solutions, Inc. Todos los derechos reservado
         </p>
-      </div></footer>
+      </div>
+	  <script type="text/javascript" src="assets/js/video-modal.js"></script>
+	</footer>
       
 </body></html>
