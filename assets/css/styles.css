@@ -946,8 +946,7 @@
 }
 
 .u-section-7 .u-image-1 {
-  height: 508px;
-  width: 508px;
+  width: 100%;
   margin: 0 auto 0 -10px;
 }
 
@@ -1079,6 +1078,8 @@
 }
 
 @media (max-width: 575px) {
+	
+  p.u-text.u-text-custom-color-4.u-text-3 {text-align: center}
   .u-section-7 .u-sheet-1 {
     min-height: 633px;
   }
