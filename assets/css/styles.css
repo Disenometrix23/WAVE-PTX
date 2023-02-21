@@ -47,8 +47,14 @@
 .video-container object,
 .video-container embed {position: absolute;min-height: 500px;width: 100%;left: 0;top: 0;}
 
-@media screen and (max-width: 414px) { .lightbox-container{margin-top: 20%}}
-@media screen and (max-width: 768px) { .lightbox-container{margin-top: 15%}}
+@media screen and (max-width: 575px) { 
+	.lightbox-container{margin-top: 20%}
+	.video-container iframe, .video-container object, .video-container embed {min-height: 350px !important;height: 350px !important}
+	.video-container {padding-top: 70px}
+}
+@media screen and (max-width: 768px) { 
+	.lightbox-container{margin-top: 35%}
+}
 
 #container {
 	border-radius: 4px;
