@@ -1109,7 +1109,6 @@
   }
 
   .u-section-7 .u-image-1 {
-    height: 210px;
     width: 320px;
   }
 } .u-section-8 {
@@ -1591,6 +1590,10 @@
 }
 
 @media (max-width: 575px) {
+  .embed-responsive-1.video-youtube{
+	  max-width:85% !important;
+	  left:30px
+  }
   .u-section-8 .u-sheet-1 {
     min-height: 2562px;
   }
