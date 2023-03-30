@@ -1,3 +1,15 @@
+h2.swal2-title{
+  color: #022a58 !important;
+}
+
+.swal2-styled.swal2-confirm{
+  background-color: #e67500 !important;
+}
+
+.load{
+  display: none;
+}
+
 .lightbox {
 	background-color: fade(black, 80%);  
 	overflow: hidden;
@@ -79,7 +91,7 @@
 
 
  .u-section-1 {
-  background-image: url("../images/background-banner-mobilink-1.png");
+  background-image: url("../images/background-banner-mobilink-1.jpg");
   background-position: 50% 50%;
 }
 
@@ -2151,7 +2163,7 @@
     font-size: 1rem;
   }
 } .u-section-10 {
-  background-image: linear-gradient(0deg, rgba(2,42,88,0.7), rgba(2,42,88,0.7)), url("../images/servicioalclienteWAVEPTXChile.jpg");
+  background-image: linear-gradient(0deg, rgba(2,42,88,0.7), rgba(2,42,88,0.7)), url("../images/servicio-al-cliente-WAVEPTX-Chile.jpg");
   background-position: 50% 50%;
 }
 
