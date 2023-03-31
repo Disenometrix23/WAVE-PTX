@@ -13,8 +13,18 @@ function hideVideo(div,video_id) {
 	document.getElementById(div).style.display = 'none';
 }
 
-$(document).keydown(function(event) { 
+jQuery(document).keydown(function(event) { 
   if (event.keyCode == 27) { 
     hideVideo('video','youtube');
   }
 });
+
+jQuery((function($){
+	var selector=".u-back-to-top";
+	$(selector).hide(),
+	$(window).scroll((
+		function(){
+			if($(this).scrollTop()>100)$(selector).fadeIn().css("display","block");
+			else $(selector).fadeOut()}
+		))
+}));
