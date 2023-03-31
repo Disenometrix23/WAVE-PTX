@@ -2484,6 +2484,11 @@ h2.swal2-title{
   font-size: 1.0715em;
 }
 
+@media (min-width: 575px) {
+	.image-gif-mobile{display:none}
+	.image-gif{display:block}
+}
+
 @media (max-width: 1199px) {
   .u-section-11 .u-sheet-1 {
     min-height: 375px;
@@ -2712,7 +2717,10 @@ h2.swal2-title{
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 575px) { 
+  .image-gif-mobile{display:block}
+  .image-gif{display:none}
+  
   .u-section-11 .u-sheet-1 {
     min-height: 536px;
   }
